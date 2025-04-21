@@ -7,6 +7,11 @@
 }
 body{
     overflow-x: hidden;
+    background-image: url(./pexels-startup-stock-photos-7376.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
 }
 header{
     padding: 10px 20px 15px;
@@ -72,4 +77,49 @@ nav .navlinks li a:hover {
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);   
     background-color: rgba(216, 12, 12, 0.74); 
+}
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    flex-direction: column;
+    
+
+}
+.project{
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(12px); /* For Safari */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border with transparency */
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
+    color: #131212;
+    display: flex;  
+    flex-direction: column;
+    gap: 16px; 
+}
+
+h2{
+    color: #786fb7;
+    font-weight: 900;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(12px); /* For Safari */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border with transparency */
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
+    
 }
