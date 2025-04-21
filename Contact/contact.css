@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+    
+}
+body{
+    overflow-x: hidden;
+    background-image: url("imgbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+header{
+    padding: 10px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: transparent;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.logo .logo-txt{
+    font-size: 24px;
+    font-weight: 500;
+    color: #d14b17;
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #786fb7;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.5s;
+    transition-property: transform, opacity;
+}
+nav .navlinks{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    transition: 0.5s;
+    
+    
+}
+nav .navlinks li a{
+    color: rgb(231, 58, 15);
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+nav .navlinks li a:hover {
+    color: antiquewhite;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);   
+    background-color: rgba(216, 12, 12, 0.74); 
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 100vh;
+    background-image: url("Contact/imgbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.contact-left {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(12px); /* For Safari */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border with transparency */
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
+    color: #131212;
+}
+
+.contact-left h1 {
+    font-size: 2.5rem;
+    color: #0f0f0f;
+    margin-bottom: 10px;
+}
+
+.contact-left hr {
+    width: 50px;
+    height: 2px;
+    background-color: #1f1c1c;
+    margin-bottom: 20px;
+    border: #0f0f0f;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: #0f0101;
+    background: rgba(196, 13, 13, 0.2);
+    color: #252222;
+    font-size: 1rem;
+}
+
+.contact-input:focus {
+    
+    background: rgba(194, 184, 184, 0.3);
+    
+}
+.contact-left textarea{
+    height: 100px;
+    padding-top:20px ;
+}
+
+button {
+    background-color: #d14b17;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.8s ease-in-out;
+}
+
+button:hover {
+    transform: translateX(5px);
+    background-color: #c14410;
+}
